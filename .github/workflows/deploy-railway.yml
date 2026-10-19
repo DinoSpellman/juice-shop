@@ -11,4 +11,4 @@
          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
        steps:
          - uses: actions/checkout@v4
-         - run: railway up --service=${{ secrets.RAILWAY_SERVICE_ID }}
+         - run: railway up --ci --service=${{ secrets.RAILWAY_SERVICE_ID }}
